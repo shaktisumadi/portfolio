@@ -1,0 +1,132 @@
+/* Global Design System CSS */
+
+/* Typography */
+:root {
+  --font-primary: 'Plus Jakarta Sans', sans-serif;
+
+  /* Color Palette - Purple Monochromatic */
+  --color-50: #FAF3FF;
+  --color-100: #F4E3FF;
+  --color-200: #EACDFF;
+  --color-300: #DAA5FF;
+  --color-400: #C46CFF;
+  --color-500: #AE35FF;
+  --color-600: #9B0FFF;
+  --color-700: #8F00FF;
+  --color-800: #7306C3;
+  --color-900: #5F079C;
+  --color-950: #400076;
+
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: hsl(275, 2, 98);
+  color: var(--color-950);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-700);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-800);
+}
+.btn-secondary {
+  background-color: var(--color-50);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid var(--color-100);
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-100);
+  border: 1px solid var(--color-100);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-700);
+  border: 2px solid var(--color-700);
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-100);
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border: 1px solid var(--color-100);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-body {
+  color: var(--color-700);
+}
+
+.bg-primary {
+  background-color: var(--color-700);
+  color: white;
+}
+
+/* Initial state: invisible and moved slightly down */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state: fade in and slide up */
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}

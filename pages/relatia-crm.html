@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatia Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/globals.css">
+  <link rel="stylesheet" href="/styles/relatia.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    :root {
+      --aurora: linear-gradient(90deg, #3343CF, #5E7CF6, #7DA0FC, #3343CF);
+    }
+  </style>
+</head>
+
+<body>
+  
+  <section class="hero">
+    <button class="project-btn btn-primary margin-bottom-2" onclick="window.location.href = '/pages/projects.html';"><span
+          class="ion--chevron-back"></span>Wanna check other projects?</button>
+    <h1><span class="aurora">Relatia</span> – CRM Web Design</h1>
+    <p class="typing">Relatia is a CRM SaaS platform designed to help businesses grow, engage, and retain customers
+      through a unified dashboard.</p>
+
+    <div class="mockup-wrapper" id="mockup">
+      <div class="topbar">
+        <div class="buttons">
+          <div class="button red"></div>
+          <div class="button yellow"></div>
+          <div class="button green"></div>
+        </div>
+
+        <div class="nav-icons">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="#888" d="M10 22L0 12L10 2l1.775 1.775L3.55 12l8.225 8.225z" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="#888" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z" />
+            </svg></svg></span>
+        </div>
+
+        <div class="url-bar">
+          <span class="lock"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <g fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                color="#888">
+                <path d="M5 15a7 7 0 1 1 14 0a7 7 0 0 1-14 0" />
+                <path d="M16.5 9.5v-3a4.5 4.5 0 1 0-9 0v3M12 15h.009" />
+              </g>
+            </svg></span>
+          <span class="domain">relatia.com</span>
+        </div>
+
+        <div class="action-icons">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M20.01 2v3.132a.314.314 0 0 1-.556.201A9.98 9.98 0 0 0 12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"
+                color="#888" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M18 7c.774.16 1.359.429 1.828.876C21 8.992 21 10.788 21 14.38s0 5.388-1.172 6.504S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.116S3 17.972 3 14.38s0-5.388 1.172-6.504C4.642 7.429 5.226 7.16 6 7m6.025-5L12 14m.025-12a.7.7 0 0 0-.472.175C10.647 2.94 9 4.929 9 4.929M12.025 2a.7.7 0 0 1 .422.174C13.353 2.94 15 4.93 15 4.93"
+                color="#888" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 4v16m-8-8h16" color="#888" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <g fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                color="#888">
+                <path
+                  d="M9 15c0-2.828 0-4.243.879-5.121C10.757 9 12.172 9 15 9h1c2.828 0 4.243 0 5.121.879C22 10.757 22 12.172 22 15v1c0 2.828 0 4.243-.879 5.121C20.243 22 18.828 22 16 22h-1c-2.828 0-4.243 0-5.121-.879C9 20.243 9 18.828 9 16z" />
+                <path
+                  d="M17 9c-.003-2.957-.047-4.489-.908-5.538a4 4 0 0 0-.554-.554C14.43 2 12.788 2 9.5 2c-3.287 0-4.931 0-6.038.908a4 4 0 0 0-.554.554C2 4.57 2 6.212 2 9.5c0 3.287 0 4.931.908 6.038a4 4 0 0 0 .554.554c1.05.86 2.58.906 5.538.908" />
+              </g>
+            </svg></span>
+        </div>
+      </div>
+      <img src="/assests/Landing Mockup.jpg" alt="Relatia CRM Screenshot" class="mockup-image" />
+    </div>
+  </section>
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <h2 class="reveal-text">About the Project</h2>
+      <p class="reveal-text">
+        Relatia is a modern all-in-one Customer Relationship Management (CRM) platform built for small and medium-sized
+        sales teams to streamline operations—from acquiring leads to retaining loyal customers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Design Goal -->
+
+  <section class="design-goal-section">
+    <h2 class="reveal-text">Design Goal</h2>
+    <div class="chip-container">
+      <div class="chip shimmer-border reveal-chip">Modern</div>
+      <div class="chip shimmer-border reveal-chip">Monochromatic</div>
+      <div class="chip shimmer-border reveal-chip">Intuitive</div>
+      <div class="chip shimmer-border reveal-chip">Conversion Focused</div>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section class="challenges-section">
+    <h2 class="reveal-text">Challenges</h2>
+    <div class="challenges-grid">
+      <div class="challenge-card reveal-chip">
+        <h3>Scattered Sales Process</h3>
+        <p>Sales reps used disjointed tools, leading to inefficient workflows and data silos.</p>
+      </div>
+      <div class="challenge-card reveal-chip">
+        <h3>Poor User Onboarding</h3>
+        <p>New users struggled to understand the system due to lack of visual clarity and guidance.</p>
+      </div>
+      <div class="challenge-card reveal-chip">
+        <h3>Low Lead Conversion</h3>
+        <p>Minimal insights and friction-heavy UI reduced lead-to-customer conversion rate.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- User Reasearch -->
+
+  <section class="user-research-section">
+    <h2 class="section-heading reveal-text">User Research</h2>
+
+    <div class="research-wrapper">
+      <div class="pain-points">
+        <span class="point top-left">Overwhelming dashboards</span>
+        <span class="point bottom-left">Generic, outdated UI</span>
+      </div>
+
+      <div class="scratch-circle-container">
+        <canvas id="scratchCanvas"></canvas>
+        <div class="center-text">Pain Points Identified</div>
+      </div>
+
+      <div class="pain-points">
+        <span class="point top-right">Confusing navigation</span>
+        <span class="point bottom-right">Lack of customization</span>
+      </div>
+
+      <div class="animated-line left-line"></div>
+      <div class="animated-line right-line"></div>
+    </div>
+  </section>
+
+
+  <!-- Design Process -->
+  <!-- HTML -->
+  <section class="design-process-section">
+    <h2 class="reveal-text">Design Process</h2>
+    <div class="design-cards">
+      <div class="process-card reveal-chip" data-step="01">
+        <img src="https://img.icons8.com/ios/100/database.png" alt="Discovery" />
+        <div>
+          <h3>Discovery</h3>
+          <p>Studied CRMs like Pipedrive, HubSpot, Zoho</p>
+        </div>
+      </div>
+      <div class="process-card reveal-chip" data-step="02">
+        <img src="https://img.icons8.com/ios/100/database.png" alt="Wireframing" />
+        <div>
+          <h3>Wireframing</h3>
+          <p>Mapped out flows: user onboarding → deal management → goal tracking</p>
+        </div>
+      </div>
+      <div class="process-card reveal-chip" data-step="03">
+        <img src="https://img.icons8.com/ios/100/database.png" alt="Design System" />
+        <div>
+          <h3>Design System</h3>
+          <p>Built a shared token-based system for colors, spacing, and interaction states</p>
+        </div>
+      </div>
+      <div class="process-card reveal-chip" data-step="04">
+        <img src="https://img.icons8.com/ios/100/database.png" alt="UI Design" />
+        <div>
+          <h3>UI Design</h3>
+          <p>Prioritized visual hierarchy, card-based layouts, and modular components</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Typography -->
+  <section class="typography-section">
+    <div class="typography-header">
+      Typography
+    </div>
+
+    <div class="spotlight-container">
+      <div class="spotlight-dim">Urbanist</div>
+      <div class="spotlight-text" id="spotlight">Urbanist</div>
+    </div>
+
+    <div class="branch-lines">
+      <!-- Replace the src below with your own hosted branch SVG if needed -->
+      <img src="/assests/Branch.png" alt="Branch Lines" />
+    </div>
+
+    <div class="font-sizes">
+      <div class="label">
+        <h4>Heading</h4>
+        <p>60px, bold</p>
+      </div>
+      <div class="label">
+        <h4>Sub-Heading</h4>
+        <p>48px, bold</p>
+      </div>
+      <div class="label">
+        <h4>Body</h4>
+        <p>16px, medium</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colors -->
+  <section class="colors-section">
+    <h2 class="colors-title">Colors</h2>
+    <p class="colors-subtitle">Monochromatic Color Harmony</p>
+
+    <div class="color-palette">
+      <div class="color-circle" style="background-color: #eaf3ff;">
+        <div class="tooltip">#eaf3ff</div>
+      </div>
+      <div class="color-circle" style="background-color: #d6e9ff;">
+        <div class="tooltip">#d6e9ff</div>
+      </div>
+      <div class="color-circle" style="background-color: #c3ddff;">
+        <div class="tooltip">#c3ddff</div>
+      </div>
+      <div class="color-circle" style="background-color: #a8cbff;">
+        <div class="tooltip">#a8cbff</div>
+      </div>
+      <div class="color-circle" style="background-color: #8eb6ff;">
+        <div class="tooltip">#8eb6ff</div>
+      </div>
+      <div class="color-circle" style="background-color: #6e95fc;">
+        <div class="tooltip">#6e95fc</div>
+      </div>
+      <div class="color-circle" style="background-color: #4f6ef9;">
+        <div class="tooltip">#4f6ef9</div>
+      </div>
+      <div class="color-circle" style="background-color: #3343CF;">
+        <div class="tooltip">#3343CF</div>
+      </div>
+      <div class="color-circle" style="background-color: #2c38b2;">
+        <div class="tooltip">#2c38b2</div>
+      </div>
+      <div class="color-circle" style="background-color: #212b8d;">
+        <div class="tooltip">#212b8d</div>
+      </div>
+    </div>
+<p class="base-label"><span class="dot"></span>Base Color<br>HEX: #3343CF</p>
+  </section>
+
+  <!-- Landing Page -->
+
+
+<section class="hero">
+    <h1 style="font-size: 32px;">Landing Page</h1>
+    <p class="typing">The relatia landing page has clear value proposition above the fold, social proof (testimonials, trusted logos), feature highlights + pricing section and strong CTA focus ("Start Free Trial")</p>
+
+    <div class="mockup-wrapper" id="mockup">
+      <div class="topbar">
+        <div class="buttons">
+          <div class="button red"></div>
+          <div class="button yellow"></div>
+          <div class="button green"></div>
+        </div>
+
+        <div class="nav-icons">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="#888" d="M10 22L0 12L10 2l1.775 1.775L3.55 12l8.225 8.225z" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="#888" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z" />
+            </svg></svg></span>
+        </div>
+
+        <div class="url-bar">
+          <span class="lock"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <g fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                color="#888">
+                <path d="M5 15a7 7 0 1 1 14 0a7 7 0 0 1-14 0" />
+                <path d="M16.5 9.5v-3a4.5 4.5 0 1 0-9 0v3M12 15h.009" />
+              </g>
+            </svg></span>
+          <span class="domain">relatia.com/home</span>
+        </div>
+
+        <div class="action-icons">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M20.01 2v3.132a.314.314 0 0 1-.556.201A9.98 9.98 0 0 0 12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"
+                color="#888" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M18 7c.774.16 1.359.429 1.828.876C21 8.992 21 10.788 21 14.38s0 5.388-1.172 6.504S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.116S3 17.972 3 14.38s0-5.388 1.172-6.504C4.642 7.429 5.226 7.16 6 7m6.025-5L12 14m.025-12a.7.7 0 0 0-.472.175C10.647 2.94 9 4.929 9 4.929M12.025 2a.7.7 0 0 1 .422.174C13.353 2.94 15 4.93 15 4.93"
+                color="#888" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <path fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 4v16m-8-8h16" color="#888" />
+            </svg></span>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
+              <g fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                color="#888">
+                <path
+                  d="M9 15c0-2.828 0-4.243.879-5.121C10.757 9 12.172 9 15 9h1c2.828 0 4.243 0 5.121.879C22 10.757 22 12.172 22 15v1c0 2.828 0 4.243-.879 5.121C20.243 22 18.828 22 16 22h-1c-2.828 0-4.243 0-5.121-.879C9 20.243 9 18.828 9 16z" />
+                <path
+                  d="M17 9c-.003-2.957-.047-4.489-.908-5.538a4 4 0 0 0-.554-.554C14.43 2 12.788 2 9.5 2c-3.287 0-4.931 0-6.038.908a4 4 0 0 0-.554.554C2 4.57 2 6.212 2 9.5c0 3.287 0 4.931.908 6.038a4 4 0 0 0 .554.554c1.05.86 2.58.906 5.538.908" />
+              </g>
+            </svg></span>
+        </div>
+      </div>
+      <img src="/assests/Landing UI Mockup.jpg" alt="Relatia CRM Screenshot" class="mockup-image" />
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3 class="footer-title">Let's build your product</h3>
+    <p class="footer-paragraph">Have a CRM, dashboard, or SaaS idea? <br>I can help you design it with precision and strategy.</p>
+    <a href="mailto:shaktiadisingh.dev@gmail.com">
+    <button class="project-btn btn-primary" mailto:shaktiadisingh.dev@gmail.com"><span
+          class="ion--chevron-back"></span>DM me or drop a message</button></a>
+  </section>
+
+
+
+  <!-- Text Animation -->
+  <script>
+    const revealItems = document.querySelectorAll(".reveal-text");
+
+    function handleScrollReveal() {
+      revealItems.forEach((el, index) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          setTimeout(() => {
+            el.classList.add("visible");
+          }, index * 100);
+        }
+      });
+    }
+
+    window.addEventListener("scroll", handleScrollReveal);
+    window.addEventListener("load", handleScrollReveal);
+  </script>
+
+  <!-- Card Animation -->
+  <script>
+    const title = document.querySelector(".reveal-text");
+    const chips = document.querySelectorAll(".reveal-chip");
+
+    function revealElementsOnScroll() {
+      const titleRect = title.getBoundingClientRect();
+      if (titleRect.top < window.innerHeight - 100) {
+        title.classList.add("visible");
+      }
+
+      chips.forEach((chip, index) => {
+        const rect = chip.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          setTimeout(() => {
+            chip.classList.add("visible");
+          }, index * 200); // staggered delay
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealElementsOnScroll);
+    window.addEventListener("load", revealElementsOnScroll);
+  </script>
+
+  <!-- User Reasearch -->
+  <script>
+    // Reveal text on scroll
+    const points = document.querySelectorAll('.point');
+    function revealPointsOnScroll() {
+      points.forEach((el, i) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          setTimeout(() => {
+            el.classList.add('visible');
+          }, i * 150);
+        }
+      });
+    }
+    window.addEventListener('scroll', revealPointsOnScroll);
+    window.addEventListener('load', revealPointsOnScroll);
+
+    // Scratch-to-reveal logic
+    const canvas = document.getElementById("scratchCanvas");
+    const ctx = canvas.getContext("2d");
+    let isDrawing = false;
+
+    function resizeCanvas() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      ctx.fillStyle = "#3b33cc";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function draw(e) {
+      if (!isDrawing) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = e.touches ? e.touches[0].clientX - rect.left : e.offsetX;
+      const y = e.touches ? e.touches[0].clientY - rect.top : e.offsetY;
+      ctx.globalCompositeOperation = "destination-out";
+      ctx.beginPath();
+      ctx.arc(x, y, 20, 0, Math.PI * 2, false);
+      ctx.fill();
+    }
+
+
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+  </script>
+  <script src="/Scripts/Spotlight.js"></script>
+  <!-- Colors Animation -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".colors-section",
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    });
+
+    tl.to(".colors-title", {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      ease: "power3.out"
+    })
+    .to(".colors-subtitle", {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      ease: "power3.out"
+    }, "-=0.6")
+    .to(".color-circle", {
+      opacity: 1,
+      scale: 1,
+      duration: 0.5,
+      stagger: 0.1,
+      ease: "power3.out"
+    }, "-=0.4")
+    .to(".base-label", {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: "power3.out"
+    }, "-=0.2");
+  </script>
+
+
+</body>
+
+</html>

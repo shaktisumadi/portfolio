@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Container */
+.navigation-bar {
+    padding: 0 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--color-100);
+}
+
+/* CSS: Shadow when scrolled */
+.navigation-bar.scrolled {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff60;
+    /* Optional: solid background when scrolled */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    backdrop-filter: blur(12px);
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-primary);
+    /* 900 */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #8F00FF;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #8F00FF;
+    /* 700 */
+}
+
+.nav-links .hire-me:hover {
+    background-color: #7306C3;
+    /* 800 */
+    color: white;
+}
+
+/* CSS: My Projects Section */
+
+.ion--chevron-back {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M328 112L184 256l144 144'/%3E%3C/svg%3E");
+    background-color: var(--color-900);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.projects-section {
+    padding: 100px 150px 48px;
+}
+
+.projects-section .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 700px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    background-color: #fbfbfb;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+.project-details {
+    flex: 1;
+    max-width: 500px;
+}
+
+.project-details h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 0.5rem;
+}
+
+.project-details p {
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.project-btn {
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    background-color: #eadaff;
+    color: #5f079c;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 60px 20px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image img {
+        max-width: 100%;
+    }
+
+    .project-details {
+        max-width: 100%;
+    }
+}
